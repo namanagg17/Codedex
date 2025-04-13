@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms-Demo</title>
+</head>
+<!-- http://127.0.0.1:3000/tachos?username=naman&password=123&num=7&color=%232eadab -->
+
+<body>
+    <h1>Forms Demo</h1>
+    <form action="/tachos">
+        <button type="button">Please do not submit</button>
+        <p>
+            <label for="name">Enter a username</label>
+            <input type="text" placeholder="username" id="name" name="username">
+        </p>
+        <p>
+            <label for="word">Enter your password</label>
+            <input type="password" placeholder="password" id="word" name="password">
+        </p>
+        <p>
+            <label>
+                Enter a valid pin
+                <input type="number" placeholder="pin" name="num" min="1" max="100">
+            </label>
+
+        </p>
+        <p>
+            <label for="color">Choose your color</label>
+            <input type="color" id="color" name="color">
+        </p>
+        <button>Sumbit!!</button>
+        <input type="submit" value="Click Me">
+    </form>
+    <hr>
+    <p>
+        <button>Not inside form</button>
+    </p>
+    <h2>Search Engines</h2>
+    <p>
+    <form action="https://www.reddit.com/search">
+        <input type="text" name="q" placeholder="reddit">
+        <button>Search</button>
+        </p>
+        <p>
+    </form>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query" placeholder="youtube">
+        <button>YT</button>
+    </form>
+    </p>
+    <p>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q" placeholder="google baba">
+        <button>GOOGLE</button>
+    </form>
+    </p>
+    <form action="/birds">
+        <input type="checkbox" name="tos" id="agree">
+        <label for="agree">I hereby agree to all the terms and conditions</label>
+        <p>
+            <input type="radio" name="Size" id="a" value="L">
+            <label for="a">Large</label>
+        </p>
+        <p>
+            <input type="radio" name="Size" id="b" value="S">
+            <label for="b">Small</label>
+        </p>
+        <p>
+            <input type="radio" name="Size" id="c" value="M">
+            <label for="c">Medium</label>
+        </p>
+        <button>Sumbit!!</button>
+    </form>
+    <form action="/file">
+        <label for="p">Choose your pet</label>
+        <select name="pet" id="p">
+            <option value="" selected></option>
+            <option value="dog">dog</option>
+            <option value="cat">cat</option>
+            <option value="rabbit">rabbit</option>
+        </select>
+        <p>
+            <button>Enter</button>
+        </p>
+        <label for="audio">Volume Level</label>
+        <input type="range" name="vol" id="audio" min="1" max="10" step="2">
+    </form>
+    <label for="req">Leave us a comment!!</label>
+    <br>
+    <textarea name="requests" id="req" placeholder="Type here !!!" rows="10" cols="30"></textarea>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(221, 166, 166);
+}
+
+h1 {
+    width: 100px;
+    background-color: beige;
+    border-width: 2px;
+    border-style: dashed;
+    border-color: rgb(255, 0, 0);
+    display: inline-block;
+}
+
+#one {
+    background-color: bisque;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #e9c46a;
+    box-sizing: border-box;
+    /*used to make content inside the box*/
+    margin: 50px;
+}
+
+#two {
+    background-color: #f4a261;
+    border-style: inset;
+    border-width: 10px;
+    border-color: blueviolet;
+    border-left-color: aqua;
+    padding-right: 50px;
+}
+
+#three {
+    background-color: #e76f51;
+    border-style: dashed;
+    border-radius: 10%;
+    margin-left: 25px;
+}
+
+span {
+    height: 200px;
+    width: 200px;
+    padding: 100px;
+    background-color: #f4a261;
+    border: 5px;
+    border-color: aqua;
+}
